@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Page</title>
+    <link rel="stylesheet" href="../statics/css/Home_style.css">
+</head>
+<body>
+    <%- include('partials/nav_bar') %> 
+    
+    <div class="container" id="container-filter">
+        <form action="/fltr" method="GET">
+        <select name="category" id="category" class="select" aria-label="Default select example">
+            <option selected="true" disabled="disabled">All Books</option>
+            <option value="IT">IT</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+        </select><br>
+        <input type="submit" value="Filter" class="btn btn-primary" id="btn-filter">
+        </form>
+    </div>
+
+    <section class="chsn_Cards">
+        <% for(let i = 0; i< books.length; i++){ %>
+<div class="any_Card">
+
+    <img src='<%= books[i]["picture"] %>' />
+    <p><%= books[i]["name"] %></p>
+    <!--<form action="/details" method="GET" id="HW_BK">
+    <button type="submit">Details</button>
+</form>-->
+<a href="/details/<%= books[i].id %>"><button>Details</button></a>
+</div>
+      <% } %>
+
+    </section>
+</body>
+</html>

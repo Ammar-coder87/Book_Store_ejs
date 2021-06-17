@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background-color: rgb(162, 184, 187);
+    margin: 0;
+    padding: 0;
+  }
+
+
+.navigation {
+    background-color: rgb(187, 180, 180);
+    display: flex;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    margin-left: 15%;
+    height: 35px;
+    width: 70%;
+    border-radius: 2px;
+    font-weight: 500;
+    justify-content: space-around;
+    box-shadow: 2px 2px 5px darkslategray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+  }
+  
+  
+  .f-anchor {
+    text-decoration: none;
+    color: #000;
+    font-family: Courgette;
+    padding: 7.5px 63px;
+    border-radius: 2px;
+    /*transition-property: background-color;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-out;*/
+  }
+  
+  .f-anchor:hover {
+    color: darkslategray;
+    background-color: rgb(233, 179, 247);
+    width: auto;
+  }
+
+  .container{
+      display: flex;
+      justify-content: center;
+      height:auto;
+      margin-top: 30px; 
+  }
+
+  #btn-filter {
+      margin-top: 50px;
+      width: 50%;
+      height: 35px;
+      font-size: large;
+      font-weight: 500;
+      font-family: 'Times New Roman', Times, serif;
+     margin-left: 25%;
+     margin-bottom: 150px;
+     background-color:rgb(238, 235, 225);
+     border-radius: 5px;
+      
+  }
+
+  #btn-filter:hover {
+    background-color: rgb(233, 179, 247);
+    color: #000;
+}
+
+#btn-filter:active {
+    transform: translateY(4px);
+}
+  #category {
+    width: 600px;
+    height: 25px;
+    padding-left: 10px;
+    background-color: lightgray;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+/*.allBks{
+  position: relative;
+  width: auto;
+  border: 0px;
+  display: flex;
+justify-content: space-between;
+text-align: center;
+margin-bottom: 40px;
+margin-left: 25%;
+margin-right: 25%;
+  
+}
+
+.sndBook, .frthBook {
+  margin-top: 40px;
+}
+  
+.allBks img {
+  width: 250px;
+  height: 400px;
+}
+
+.allBks p {
+  font-weight: bold;
+}
+.allBks button {
+  width: 100%;
+  height: 30px;
+  background-color:darkturquoise;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+
+.fstBook, .sndBook, .thrdBook, .frthBook {
+border: 0px, solid, skyblue;
+background-color: skyblue;
+
+}
+.allBks button:hover {
+  background-color: whitesmoke;
+  color: #000;
+}
+
+.allBks button:active {
+  transform: translateY(4px);
+}*/
+
+/*These styles for filter_index.ejs*/
+.chsn_Cards {
+  position: relative;
+  width: auto;
+  border: 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+ 
+ 
+}
+
+.any_Card img {
+  width: 250px;
+  height: 400px;
+}
+
+.any_Card p {
+  font-weight: bold;
+}
+.any_Card button {
+  width: 100%;
+  height: 30px;
+  background-color:darkturquoise;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+
+.any_Card {
+border: 0px, solid, skyblue;
+background-color: skyblue;
+margin-bottom: 40px;
+
+
+}
+.any_Card button:hover {
+  background-color: whitesmoke;
+  color: #000;
+}
+
+.any_Card button:active {
+  transform: translateY(4px);
+}

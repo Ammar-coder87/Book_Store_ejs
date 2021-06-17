@@ -1,0 +1,57 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../statics/css/Home_style.css">
+</head>
+<body>
+    <%- include('partials/nav_bar') %>
+<div class="container" id="container-filter">
+    <form action="" method="GET">
+    <select name="category" id="category" class="select" aria-label="Default select example">
+        <option selected="true" disabled="disabled">All Books</option>
+        <option value="IT">IT</option>
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+    </select><br>
+    <input type="submit" value="Filter" class="btn btn-primary" id="btn-filter">
+    </form>
+</div>
+
+<section>
+    <div class="allBks">
+        <div class="container1">
+        <div class="fstBook">
+            <img src="/statics/images/IT.jpg" alt="IT"><br>
+            <p>Hello World</p>
+            <form action="/details" method="GET" id="HW_BK">
+            <button type="submit" id="HW_BK" value="HW_BK">Details</button>
+        </form>
+        </div>
+        <div class="sndBook">
+            <img src="/statics/images/chry.jpg" alt="chry"><br>
+            <p>ORGANIC Chemistry</p>
+            <button type="submit">Details</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="thrdBook">
+            <img src="/statics/images/phcs.jpg" alt="phcs"><br>
+            <p>Advanced Physics</p>
+            <button type="submit">Details</button>
+        </div>
+        <div class="frthBook">
+            <img src="/statics/images/IT2.jpg" alt="IT2"><br>
+            <p>JavaScript: The Good Parts</p>
+            <button type="submit">Details</button>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    
+</body>
+</html>
