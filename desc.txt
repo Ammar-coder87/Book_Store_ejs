@@ -1,0 +1,5 @@
+* make details button in the home page goes to the corresponding details page -- hint: req.params
+
+* solve the "second point in the desc assignment.png" -- hint: req.body
+
+* solve the "third point in the desc assignment.png" -- hint: req.query

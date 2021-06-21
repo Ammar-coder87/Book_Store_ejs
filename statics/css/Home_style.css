@@ -15,9 +15,9 @@
     display: flex;
     margin-top: 7px;
     margin-bottom: 15px;
-    margin-left: 15%;
+    margin-left: 5%;
     height: 35px;
-    width: 70%;
+    width: 90%;
     border-radius: 2px;
     font-weight: 500;
     justify-content: space-around;
@@ -33,8 +33,10 @@
     text-decoration: none;
     color: #000;
     font-family: Courgette;
-    padding: 7.5px 63px;
+    padding: 7.5px 66px;
     border-radius: 2px;
+    text-align: center;
+    width:auto;
     /*transition-property: background-color;
     transition-duration: 2s;
     transition-delay: 1s;
